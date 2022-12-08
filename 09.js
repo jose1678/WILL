@@ -29,8 +29,8 @@ function filtrar(funcion) {
 Array.prototype.filtrar = function(funcion){
   let array = [];
   for(let i = 0; i < this.length; i++){
-     if(funcion(this[i])){// que recibe una funcion (callback) que devuelve true o false.
-        array.push(this[i]);// if true o false: filtrar los elementos de ese arreglo en base al resultado de esa funcion comparadora
+     if(funcion(this[i])){
+        array.push(this[i]);
      }
   }
   return array;
